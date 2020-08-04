@@ -5,7 +5,10 @@ end
 attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 def batch_badge_creator(attendees)
-  array.collect { |name| "Hello, my name is " + name}
+  attendees.collect do |name|
+    badge_maker(name)
+  end
+
 end
 
 #def batch_badge_creator(attendees)
